@@ -1,0 +1,8 @@
+ErrorDocument 404 /404.html
+RewriteEngine on
+RewriteRule ^/ /index.php
+RewriteRule ^([a-zA-Z0-9_-]+)$ /user.php?username=$1
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ / [R=301,L]
+

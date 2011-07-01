@@ -1,0 +1,420 @@
+/*
+	Grwl.it style.css
+	This Stylesheet includes pieces form:
+	Eric Meyer & Richard Clark - html5doctor.com/html-5-reset-stylesheet/
+*/
+/* 
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, 
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+article, aside, figure, footer, header, 
+hgroup, nav, section { display:block; }
+
+nav ul { list-style:none; }
+
+blockquote, q { quotes:none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+
+input, select { vertical-align:middle; }
+
+/*Custom reset for lists*/
+ul,li,ol { list-style-type: none; list-style-image: none; }
+
+/* END RESET CSS */
+
+/* BEGIN DEFAULT SITE CSS */
+
+h1,h2,h3,h4,p,li,pre,input { font-family: Futura,arial; font-weight: Condensed Medium; }
+
+a:visited, a:active, a:hover, a:focus, a:link { color: #000; text-decoration:none; border-bottom: 1px solid #000; }
+
+body{ 
+	word-wrap:break-word;
+	background: #000 url("/images/bknd_belltower.png") no-repeat 0 50% fixed; 
+	overflow-y: scroll;
+}
+	
+.clear { clear:both; }
+
+input._btn{
+	cursor: pointer;
+}
+
+#container{ 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 920px;
+	padding: 0px 20px;
+}
+
+header h1 {
+	font-size: 6.25em;
+}
+
+header>h1>a:visited, header>h1>a:active, header>h1>a:hover, header>h1>a:focus, header>h1>a:link{
+	border-bottom: none !important;
+	color: #000;
+}
+
+header p {
+	font-size: 2.25em;
+}
+
+footer p{
+	margin-top: 100px;
+	text-align: center;
+}
+
+#_top_bar,#_login_signup,#_admin_main,#_confirm_del, #_edit_container, #_profile_stream li,#_profile_details,#_profile_follows,#_user_stream .tabs, #_profile_msg,#_search_results, #_subject_filter{
+	-moz-box-shadow: 0px 0px 5px #000;
+	-webkit-box-shadow: 0px 0px 5px #000;
+	box-shadow: 0px 0px 5px #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-image: -moz-linear-gradient(100% 100% 90deg, rgba(209, 209, 209, 0.5), rgba(255, 255, 255, 0.5));
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(209, 209, 209, 0.5)), to(rgba(255, 255, 255, 0.5)));
+	border: 1px solid #fff;
+}
+
+#_search_results{
+	margin-top: 20px;
+	padding: 20px;
+}
+
+#_top_bar{
+	-webkit-border-radius-topright: 0px;
+	-moz-border-radius-topright: 0px;
+	-webkit-border-radius-topleft: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top: none;
+}
+#_login_signup {
+	width: 350px;
+	padding: 20px;
+	width: 313px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+._signup_home, ._signin_home{
+	margin-bottom: 100px;
+	height:auto;
+}
+._signup_home{
+	display:none;
+}
+
+._signup_home label, ._signin_home label{
+	width: 120px;
+	float: left;
+}
+
+._signup_home input, ._signin_home input{
+	float: left;
+}
+
+#_login_signup h3:first-child{
+	border-top: none;
+}
+
+#_login_signup h3{
+	padding:10px 0;
+	text-shadow: 1px 1px 0px #fff;
+	font-size: 2.25em;
+	text-align: center;
+	border-top: 1px solid #000;
+	display:block;
+}
+
+
+#_login_signup h3:hover,#_login_signup h3:focus{
+	color: red;
+	cursor: pointer;
+}
+
+#_top_bar{
+	height: 150px;
+}
+
+#_top_bar h1{
+	float: left;
+	margin-right: 10px;
+}
+
+#_top_bar #_search_form, #_search_form li{
+	float:left;
+}
+
+#_profile_details{
+	padding: 20px;
+	width: 408px;
+	float: left;
+	margin-top: 20px;
+}
+
+#_profile_details img{
+	float:left;
+}
+
+#_profile_details h2,#_profile_details p,#_profile_details h3{
+	margin-left: 60px;
+}
+
+#_top_bar #_search_form{
+	margin-top: 60px;
+}
+
+#_top_bar nav{
+	margin-top: 60px;
+	float:left;
+}
+
+
+#_top_bar nav li{
+	float:left;
+	margin-right: 10px;
+}
+
+#_profile_follows{
+	padding: 20px;
+	float: left;
+	width: 258px;
+	margin-top: 20px;
+}
+
+#_user_stream{
+	float:left;
+	width: 600px;
+	margin-right: 16px;
+}
+
+#_profile_msg{
+	float:left;
+	width: 560px;
+	margin-right: 16px;
+}
+
+#_user_stream .tabs{
+	width: inherit;
+	margin-top: 20px;
+	float:left;
+}
+
+#_subject_filter{
+	margin-top: 20px;
+	padding: 20px;
+}
+
+#_user_stream .tabs li{
+	margin-right:20px;
+	padding: 20px;
+	float:left;
+}
+
+#_user_stream .tabs li:first-child{
+	margin-left: 130px;
+}	
+
+#_user_stream .tabs li.active{
+	background-image: -moz-linear-gradient(100% 100% 90deg, rgba(209, 209, 209, 0.5), rgba(255, 255, 255, 0.5));
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(209, 209, 209, 0.5)), to(rgba(255, 255, 255, 0.5)));
+}
+
+#_profile_stream{
+	float:left;
+	margin-right: 20px;
+	width: 600px;
+}
+
+#_profile_stream li{
+	padding: 20px;
+	margin-top: 20px;
+	min-height: 50px;
+}
+
+#_profile_stream strong{
+	margin-left: 20px;
+	font-size: 2em;
+	float:left;
+}
+
+#_profile_stream img{
+	float:left;
+}
+
+#_profile_stream form{
+	float:right;
+}
+#_profile_msg{
+	margin-top: 20px;
+	padding: 20px;
+}
+
+#_profile_follows a{
+	border: none
+}
+
+#_profile_follows img{
+	width: 30px;
+	border: 1px solid black;
+}
+
+#_profile_follows ul+div+h3{
+	margin: 20px 0;
+}
+
+#_profile_follows h3{
+	margin-bottom: 20px;
+}
+
+#_profile_follows ul{
+	margin-left: 20px;
+}
+
+#_profile_follows ul li{
+	padding-left: 10px;
+	float:left;
+}
+
+#_geo_map{
+	-moz-box-shadow: 0px 0px 5px #000;
+	-webkit-box-shadow: 0px 0px 5px #000;
+	box-shadow: 0px 0px 5px #000;
+	border: 1px solid #fff;
+	margin-top: 20px;
+	float: left;
+	width:444px;
+	height:300px;
+	margin-right: 20px;
+}
+
+p.error{
+	color: #ff0000;
+	font-size: .75em;
+}
+
+#_admin_main{
+    margin-left: -100px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 1060px;
+}
+
+#_admin_main>ul{
+	margin-left: 260px;
+}
+
+#_admin_main .tab_content{
+	margin-top: 20px;
+	padding: 20px;
+	border-top: 1px solid black;
+}
+
+#_edit_container .tab_content{
+	margin-top: 20px;
+	padding: 20px;
+	border-top: 1px solid black;
+}
+
+#_admin_main>ul>li,#_edit_container>ul>li{
+	font-size: 1.75em;
+	margin-right: 20px;
+	float:left;
+}
+
+#_admin_main>ul>li,#_edit_container>ul>li{
+    margin-bottom: -21px;
+    padding: 10px;
+}
+
+
+#_admin_main>ul>li>a,#_edit_container>ul>li>a{
+	border-bottom: none;
+}
+
+#_admin_main .tabs li.active,#_edit_container .tabs li.active {
+    background-image: -moz-linear-gradient(100% 100% 90deg, rgba(209, 209, 209, 0.5), rgba(255, 255, 255, 0.5));
+    border: 1px solid #000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+    margin-bottom: -21px;
+    padding: 10px;
+}
+
+#_edit_container{
+	padding: 20px;
+	margin-top: 20px;
+}
+
+#_edit_container>ul{
+	margin-left: 243px;
+}
+
+#_confirm_del{
+	padding: 20px;
+	margin-top: 20px;
+}
+
+#_admin_table{
+   margin-top: 20px;
+}
+
+#_admin_table td{
+	border-right: 1px solid #000;
+	padding: 5px;
+}
+
+#_admin_table td:first-child{
+	border-right:none;
+}
+footer{
+	margin-top: 20px;
+}
+footer p{
+	color: #fff;
+}
+
+/* END DEFAULT SITE CSS */
+
